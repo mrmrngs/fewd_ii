@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        <ul>
+            <li>
+                <label for="id">8-Digit Employee ID</label>
+                <input type="text" name="id" id="id" maxlength="8" required autofocus>
+            </li>
+            <li>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" required>
+            </li>
+            <li>
+                <label for="ext">4-Digit Extension</label>
+                <input type="text" name="ext" id="ext" maxlength="4" required>
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </li>
+            <li>
+                <label for="department">Department</label>
+                <select name="department" id="department" required>
+                    <option value="">Select Department:</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="executive">Executive</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="qa">Quality Assurance</option>
+                    <option value="sales">Sales</option>
+                </select>
+            </li>
+            <button type="submit" id="submit" class="button">Add Employee</button>
+        </ul>
+    </form>
+</body>
+</html>
+
+<!-- 
+    • Style the form tag to look like my design. You are free to use your own colors here.
+    • Within the form, create six form elements. The specs for these elements are outlined below.
+    • Make sure to add labels for each input and select element.
+    • Add a Submit button that when clicked, will call a JavaScript function that will process your code. 
+
+
+-->

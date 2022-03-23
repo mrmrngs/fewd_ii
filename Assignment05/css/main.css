@@ -1,0 +1,7 @@
+* {box-sizing: border-box;}
+h1 {margin-bottom: 30px;}
+label {font-weight: bold; display: inline-block;}
+input, select {margin-bottom: 10px; display: block;}
+form {width: 30%; padding: 20px; border: 2px solid orangered; background-color: lightgray;}
+form ul {list-style-type: none;}
+button {color: white; background-color: brown; border-radius: 5px; border: solid 0px; padding: 2% 5%; margin-top: 10%;}
