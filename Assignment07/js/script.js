@@ -64,7 +64,7 @@ form.addEventListener('submit', (e) => {
 
 // DELETE EMPLOYEE
 employees.addEventListener('click', (e) => {
-    if (e.target.nodeName == 'BUTTON') {
+    if (e.target.tagName == 'BUTTON') {
         if (confirm(`Are you sure you want to delete this employee entry?`)) {
             employees.deleteRow(e.target.parentElement.parentElement.rowIndex);
             rowCount = employees.rows.length - 1;
