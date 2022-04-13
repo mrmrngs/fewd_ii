@@ -30,9 +30,9 @@ empForm.addEventListener('submit', e => {
     let email = $('email');
     let dept = $('department');
 // GET THE LOGINDETAILS OUTPUT ELEMENT FROM THE PARENT PAGE
-    let logindetails = window.opener.document.getElementbyId('loginDetails');
+    let loginDetails = window.opener.document.getElementbyId('loginDetails');
 // SET THE TEXT OF THE LOGINDETAILS ELEMENT TO THE ABOVE SET VARIABLES
-    logindetails.innerText = `ID: ${id.value}<br>Name: ${name.value}<br>Extension: ${ext.value}<br>Email: ${email.value}<br>Department: ${dept.value}`;
+    loginDetails.innerText = `ID: ${id.value}<br>Name: ${name.value}<br>Extension: ${ext.value}<br>Email: ${email.value}<br>Department: ${dept.value}`;
 // CLOSE THE POPUP
     window.close();
 });
