@@ -17,7 +17,7 @@ let empCount = $('empCount');
 
 // BUILD THE EMPLOYEES TABLE WHEN THE PAGE LOADS
 window.addEventListener('load', (e) => { 
-    buildGrid();
+    buildGrid(empArray);
 });
 
 // ADD EMPLOYEE
@@ -36,7 +36,7 @@ form.addEventListener('submit', (e) => {
     empArray = empArray.push(newEmp);
     localStorage.saveItem('empArray', JSON.stringify(empArray));
     // BUILD THE GRID
-    buildGrid();
+    buildGrid(empArray);
     // RESET THE FORM
     form.reset();
     // SET FOCUS BACK TO THE ID TEXT BOX
@@ -57,7 +57,7 @@ empTable.addEventListener('click', (e) => {
             empArray.splice(delRowIndex, 1)
             localStorage.saveItem('empArray', JSON.stringify(empArray));
             // BUILD THE GRID
-            buildGrid();
+            buildGrid(empArray);
         };
     };
 });
