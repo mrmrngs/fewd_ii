@@ -20,7 +20,17 @@ str = 'the quick brown fox jumps over the lazy dog';
 console.log(capitalize(str));
 
 //STEP 3
-
+function vowelCount(str) {
+    let vowelList = 'aeiouAEIOU'
+    let vCount = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (vowelList.indexOf(str[i]) !== -1) {
+            vCount += 1;
+        }
+        return vCount;
+    };
+};
+console.log(vowelCount('The quick brown fox'));
 
 /*    3. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
 
