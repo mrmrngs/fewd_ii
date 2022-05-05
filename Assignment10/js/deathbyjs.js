@@ -9,16 +9,18 @@ console.log(alphaOrder(str));
 //STEP 2
 let str;
 function capitalize(str) {
-    let splitStr = str.split(' ');
-
+    let strSplit = str.split(' ');
+    let arrCap = [];
+    for (let i = 0; i < strSplit.length; i++) {
+        arrCap.push(strSplit[i].charAt(0).toUpperCase() + strSplit[i].slice(1));
+    }
+    return arrCap.join(' ');
 }
-/*Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string to upper case.
-
-Sample Data and Output
-Example string: 'the quick brown fox' 
-Expected Output: 'The Quick Brown Fox'*/
+str = 'the quick brown fox jumps over the lazy dog';
+console.log(capitalize(str));
 
 //STEP 3
+
 
 /*    3. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
 
